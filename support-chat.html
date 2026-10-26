@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Private Support Chat | Clutch Zone</title><link rel="stylesheet" href="styles.css?v=63"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script defer src="support-chat.js"></script></head>
+<body class="admin-chat-page">
+<header class="top"><div class="wrap nav"><a class="brand" href="admin.html"><img src="clutch-zone-logo.png" alt="Clutch Zone"><span>CLUTCH ZONE ADMIN</span></a></div></header>
+<div class="backbar wrap"><button type="button" class="back-button" id="backButton"><span class="back-icon">←</span><span>BACK TO SUPPORT</span></button></div>
+<main class="wrap support-chat-detail">
+<section class="support-chat-hero"><div><div class="eyebrow">🔒 PRIVATE SUPPORT</div><h1 id="playerTitle">Loading…</h1><p id="playerMeta">Player support request</p></div><div class="private-badge">ADMIN ONLY</div></section>
+<section class="chat-panel support-detail-panel"><div class="chat-head inner-head"><div><h2>💬 Private Chat</h2><p>Sirf selected player + Clutch Zone Admin</p></div><span class="live-pill">● LIVE</span></div><div id="chatNotice" class="notice">Chat load ho raha hai…</div><div id="privateChatMessages" class="chat-messages"></div><form id="privateChatForm" class="chat-compose"><input name="message" required maxlength="1500" placeholder="Player ko reply likhein…" autocomplete="off"><button class="primary" type="submit">SEND REPLY ➤</button></form></section>
+</main><div class="toast" id="toast"></div><div class="cz-confirm" id="confirmModal" aria-hidden="true"><div class="cz-confirm-box"><div class="cz-confirm-icon">!</div><div><div class="eyebrow">CONFIRM ACTION</div><h3 id="confirmTitle">Delete this message?</h3><p id="confirmText">This action cannot be undone.</p></div><div class="cz-confirm-actions"><button type="button" class="light" id="confirmCancel">CANCEL</button><button type="button" class="danger" id="confirmOk">DELETE</button></div></div></div>
+</body></html>

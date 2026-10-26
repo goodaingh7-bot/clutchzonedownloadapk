@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>24/7 Support | Clutch Zone</title>
+<link rel="stylesheet" href="styles.css?v=69">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script defer src="common.js?v=69"></script><script defer src="support.js"></script>
+</head>
+<body data-page="support">
+<header class="top"><div class="wrap nav">
+<a class="brand" href="index.html"><img src="clutch-zone-logo.png" alt="Clutch Zone"><span>CLUTCH ZONE</span></a>
+<nav class="links" id="links"><a href="index.html">HOME</a><a href="matches.html">MATCH SCHEDULE</a><a href="social.html">SOCIAL MEDIA</a><a href="support.html">24/7 SUPPORT</a><a href="chat-group.html">CHAT GROUP</a></nav>
+
+<button id="menu" class="menu">☰</button></div></header>
+<div class="backbar wrap"><button type="button" class="back-button" id="backButton" aria-label="Go back"><span class="back-icon">←</span><span>BACK</span></button></div>
+<main class="wrap support-page">
+<section class="support-hero"><div class="eyebrow">🟢 CLUTCH ZONE COMMUNITY</div><h1>24/7 <span>SUPPORT</span></h1><p>Private support ke liye pehle <b>Name + Free Fire UID</b> save karo. Ek baar save karne ke baad isi identity se aapka private support chat automatically open hoga.</p><div class="chat-status"><i></i> PRIVATE SUPPORT CHAT</div></section>
+<section class="chat-panel">
+<div class="chat-head"><div><h2>🔐 Chat Access</h2><p>Same UID se sirf ek registration. Same name allowed hai. Aapka support chat sirf aap aur admin dekh sakte hain.</p></div><span class="live-pill">● 24/7</span></div>
+<div id="registerPanel" class="access-panel"><div class="access-badge">STEP 1 • IDENTITY SAVE</div><h3>NAME + FREE FIRE UID</h3><p>Apna <b>Name</b> aur <b>Free Fire UID</b> save karo. Same UID dobara enter karoge to wahi account/chat automatically open hoga.</p>
+<form id="registerForm" class="access-form"><div class="field"><label>YOUR NAME</label><input id="regName" maxlength="32" required placeholder="Apna naam" autocomplete="name"></div><div class="field"><label>FREE FIRE UID</label><input id="regUid" maxlength="64" required inputmode="numeric" placeholder="Apna UID" autocomplete="off"></div><button class="primary support-save-btn" type="submit">CONTINUE TO CHAT →</button></form></div>
+<div id="chatPanelInner" class="hide"><div class="chat-head inner-head"><div><h2>🔒 Private Support Chat</h2><p>Sirf aap aur Clutch Zone Admin • Kisi aur player ko nahi dikhega</p></div><span class="live-pill">● LIVE</span></div><div id="chatNotice" class="notice">Chat load ho raha hai…</div><div id="chatMessages" class="chat-messages" aria-live="polite"></div><form id="chatForm" class="chat-compose"><input name="message" required maxlength="1500" placeholder="Message likho…"><button class="primary" type="submit">SEND ➤</button></form><p class="chat-footnote">Ye private support ticket hai. Sirf aap aur Clutch Zone Admin is chat ko dekh sakte hain.</p></div>
+</section></main>
+<footer class="footer"><div class="wrap foot"><strong>CLUTCH ZONE</strong><span>24/7 COMMUNITY SUPPORT</span></div></footer>
+<div class="toast" id="toast"></div>
+</body></html>
